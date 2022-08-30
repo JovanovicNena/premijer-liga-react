@@ -11,6 +11,11 @@ function Pocetna() {
     ]);
 
 
+    function sacuvajStrelca(strelac) {
+        alert('Novi strelac dodat u spisak!')
+        setStrelci(strelci => [...strelci, strelac]);
+    }
+
 
     return (
         <div className="d-pocetna">
@@ -18,7 +23,7 @@ function Pocetna() {
             <h1>Premier League '22 - Top Scorers</h1>
 
             <div id="frm">
-                <NoviStrelacForma />
+                <NoviStrelacForma funkcija={sacuvajStrelca} />
             </div>
 
             <table className="tbl table" id="tabela">

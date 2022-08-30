@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function NoviStrelacForma() {
+function NoviStrelacForma(props) {
 
     const [id, setId] = useState('');
     const [ime, setIme] = useState('');
@@ -9,6 +9,17 @@ function NoviStrelacForma() {
     const [broj_na_dresu, setBrojDres] = useState('');
     const [klub, setKlub] = useState('');
     const [broj_golova, setBrojGolova] = useState(0);
+
+    const objStrelac = {
+        id: id,
+        ime: ime,
+        prezime: prezime,
+        godine: godine,
+        broj_na_dresu: broj_na_dresu,
+        klub: klub,
+        broj_golova: broj_golova,
+    }
+
 
     function saveId(e) {
         setId(e.target.value)
@@ -57,7 +68,7 @@ function NoviStrelacForma() {
                 <input type='text' className="form-control mt-2 mb-2" value={godine} onChange={saveGodine} />
             </div>
             <div className="form-elm">
-                <label>Broj na dresu: </label>
+                <label>Broj dres: </label>
                 <input type='text' className="form-control mt-2 mb-2" value={broj_na_dresu} onChange={saveBrojDres} />
             </div>
             <div className="form-elm">
@@ -69,6 +80,7 @@ function NoviStrelacForma() {
                 <input type='text' className="form-control mt-2 mb-2" value={broj_golova} onChange={saveBrojGolova} />
             </div>
 
+            <button className='btn btn-primary' id='sacuvaj' onClick={() => props.funkcija(objStrelac)}>Sacuvaj</button>
 
         </div>
     )
