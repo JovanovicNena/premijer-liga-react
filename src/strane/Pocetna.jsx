@@ -1,5 +1,6 @@
 import ListaStrelaca from "../komponente/ListaStrelaca";
 import { useState } from 'react';
+import NoviStrelacForma from "../komponente/NoviStrelacForma";
 
 function Pocetna() {
 
@@ -10,10 +11,15 @@ function Pocetna() {
     ]);
 
 
+
     return (
         <div className="d-pocetna">
 
             <h1>Premier League '22 - Top Scorers</h1>
+
+            <div id="frm">
+                <NoviStrelacForma />
+            </div>
 
             <table className="tbl table" id="tabela">
                 <thead>
