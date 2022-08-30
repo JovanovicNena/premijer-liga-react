@@ -8,7 +8,7 @@ function NoviStrelacForma(props) {
     const [godine, setGodine] = useState('');
     const [broj_na_dresu, setBrojDres] = useState('');
     const [klub, setKlub] = useState('');
-    const [broj_golova, setBrojGolova] = useState(0);
+    const [broj_golova, setBrojGolova] = useState('');
 
     const objStrelac = {
         id: id,
