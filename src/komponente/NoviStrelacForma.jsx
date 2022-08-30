@@ -2,6 +2,41 @@ import { useState } from 'react';
 
 function NoviStrelacForma() {
 
+    const [id, setId] = useState('');
+    const [ime, setIme] = useState('');
+    const [prezime, setPrezime] = useState('');
+    const [godine, setGodine] = useState('');
+    const [broj_na_dresu, setBrojDres] = useState('');
+    const [klub, setKlub] = useState('');
+    const [broj_golova, setBrojGolova] = useState(0);
+
+    function saveId(e) {
+        setId(e.target.value)
+    }
+
+    function saveIme(e) {
+        setIme(e.target.value)
+    }
+
+    function savePrezime(e) {
+        setPrezime(e.target.value)
+    }
+
+    function saveGodine(e) {
+        setGodine(e.target.value)
+    }
+
+    function saveBrojDres(e) {
+        setBrojDres(e.target.value)
+    }
+
+    function saveKlub(e) {
+        setKlub(e.target.value)
+    }
+    function saveBrojGolova(e) {
+        setBrojGolova(e.target.value)
+    }
+
     return (
         <div className="d-nsf">
 
