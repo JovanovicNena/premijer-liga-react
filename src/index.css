@@ -56,7 +56,9 @@ code {
   font-size: 35px;
 }
 
-#tabela{ 
+#tabela-pr{ 
   margin-left: 480px;
+  margin-top: 50px;
+  font-size: 25px;
   width: 1300px;
 }

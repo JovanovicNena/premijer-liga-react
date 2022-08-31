@@ -29,7 +29,7 @@ function Tabela() {
             <button className='btn btn-primary' onClick={prikazTabele} id='premier-tbl'>Prikazi tabelu Premier lige</button>
 
             <div>
-                <table className="table table-bordered table-light" id="tabela" style={{ display: data.length > 0 ? 'block' : 'none' }}>
+                <table className="table table-bordered table-light" id="tabela-pr" style={{ display: data.length > 0 ? 'block' : 'none' }}>
                     <thead className="table-primary">
                         <tr>
                             <th>Naziv kluba</th>
