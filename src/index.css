@@ -52,6 +52,11 @@ code {
 }
 
 #premier-tbl {
-  margin-top: 150px;
+  margin-top: 80px;
   font-size: 35px;
+}
+
+#tabela{ 
+  margin-left: 480px;
+  width: 1300px;
 }
