@@ -1,7 +1,6 @@
 import ListaStrelaca from "../komponente/ListaStrelaca";
 import { useState } from 'react';
 import NoviStrelacForma from "../komponente/NoviStrelacForma";
-import Tabela from "./Tabela";
 
 function Pocetna() {
 
@@ -23,7 +22,6 @@ function Pocetna() {
 
             <h1>Premier League '22 - Top Scorers</h1>
 
-            <Tabela />
 
             <div id="frm">
                 <NoviStrelacForma funkcija={sacuvajStrelca} />
